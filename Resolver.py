@@ -21,7 +21,7 @@ def read_ips_from_csv(input_file):
     with open(input_file, mode="r") as file:
         reader = csv.reader(file)
         for row in reader:
-            if row:  # Assicurati che la riga non sia vuota
+            if row:  #riga non vuota
                 ip_list.append(row[0])
     return ip_list
 
